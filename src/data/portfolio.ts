@@ -1,4 +1,32 @@
 // Portfolio Data - Edit this file to update your information
+
+export type SkillLevel = "learning" | "comfortable" | "proficient" | "expert";
+export type SkillCategory = "frontend" | "backend" | "tools" | "other";
+export type ProjectStatus = "COMPLETED" | "IN_PROGRESS" | "ARCHIVED";
+
+export interface Skill {
+  name: string;
+  category: SkillCategory;
+  level: SkillLevel;
+  experience_years: number;
+  fun_fact?: string;
+}
+
+export interface Project {
+  name: string;
+  description: string;
+  long_description: string;
+  tech_stack: string[];
+  highlights: string[];
+  demo_url: string;
+  github_url: string;
+  image_url: string;
+  status: ProjectStatus;
+  date_completed: string;
+  your_role: string;
+  team_size: string;
+}
+
 export const portfolioData = {
   personal_info: {
     name: "Tim Hofman",
@@ -310,30 +338,3 @@ Currently pursuing my Bachelor's in Applied Computer Science while building proj
     og_image: "/og-image.png"
   }
 };
-
-export type SkillLevel = "learning" | "comfortable" | "proficient" | "expert";
-export type SkillCategory = "frontend" | "backend" | "tools" | "other";
-export type ProjectStatus = "COMPLETED" | "IN_PROGRESS" | "ARCHIVED";
-
-export interface Skill {
-  name: string;
-  category: SkillCategory;
-  level: SkillLevel;
-  experience_years: number;
-  fun_fact?: string;
-}
-
-export interface Project {
-  name: string;
-  description: string;
-  long_description: string;
-  tech_stack: string[];
-  highlights: string[];
-  demo_url: string;
-  github_url: string;
-  image_url: string;
-  status: ProjectStatus;
-  date_completed: string;
-  your_role: string;
-  team_size: string;
-}
