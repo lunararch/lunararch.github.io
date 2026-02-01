@@ -86,75 +86,75 @@ Currently pursuing my Bachelor's in Applied Computer Science while building proj
   skills: [
     {
       name: "Dotnet",
-      category: "backend" as const,
-      level: "proficient" as const,
+      category: "backend",
+      level: "proficient",
       experience_years: 6,
       fun_fact: "If it compiles, I trust it… mostly"
     },
     {
       name: "JavaScript",
-      category: "frontend" as const,
-      level: "comfortable" as const,
+      category: "frontend",
+      level: "comfortable",
       experience_years: 3,
       fun_fact: "Once debugged a semicolon for 3 hours"
     },
     {
       name: "React",
-      category: "frontend" as const,
-      level: "comfortable" as const,
+      category: "frontend",
+      level: "comfortable",
       experience_years: 1,
       fun_fact: "UseEffect is my best friend and worst enemy"
     },
     {
       name: "TypeScript",
-      category: "frontend" as const,
-      level: "proficient" as const,
+      category: "frontend",
+      level: "proficient",
       experience_years: 3,
       fun_fact: "Still discovering new type tricks every day"
     },
     {
       name: "Java",
-      category: "backend" as const,
-      level: "proficient" as const,
+      category: "backend",
+      level: "proficient",
       experience_years: 4,
       fun_fact: "Still typing getters and setters in my sleep"
     },
     {
       name: "Go",
-      category: "backend" as const,
-      level: "learning" as const,
+      category: "backend",
+      level: "learning",
       experience_years: 1,
       fun_fact: "Gopher mascot is my spirit animal"
     },
     {
       name: "Vue.js",
-      category: "frontend" as const,
-      level: "learning" as const,
+      category: "frontend",
+      level: "learning",
       experience_years: 1,
       fun_fact: "The progressive framework that keeps surprising me"
     },
     {
       name: "SQL",
-      category: "backend" as const,
-      level: "proficient" as const,
+      category: "backend",
+      level: "proficient",
       experience_years: 5,
       fun_fact: "I dream in JOINs and WHERE clauses"
     },
     {
       name: "Python",
-      category: "backend" as const,
-      level: "comfortable" as const,
+      category: "backend",
+      level: "comfortable",
       experience_years: 4,
       fun_fact: "Tabs vs spaces? Still can't decide"
     },
     {
       name: "Git",
-      category: "tools" as const,
-      level: "proficient" as const,
+      category: "tools",
+      level: "proficient",
       experience_years: 5,
       fun_fact: "Master of 'git commit -m fix stuff'"
     }
-  ],
+  ] satisfies Skill[],
 
   projects: [
     {
@@ -170,7 +170,7 @@ Currently pursuing my Bachelor's in Applied Computer Science while building proj
       demo_url: "",
       github_url: "https://github.com/lunararch/arc",
       image_url: "/projects/arc.png",
-      status: "COMPLETED" as const,
+      status: "COMPLETED",
       date_completed: "2026-01",
       your_role: "Full-Stack Developer / Group Project",
       team_size: "4 people"
@@ -188,7 +188,7 @@ Currently pursuing my Bachelor's in Applied Computer Science while building proj
       demo_url: "",
       github_url: "https://github.com/lunararch/go",
       image_url: "/projects/go.png",
-      status: "COMPLETED" as const,
+      status: "COMPLETED",
       date_completed: "2026-01",
       your_role: "Full-Stack Developer",
       team_size: "Solo"
@@ -206,7 +206,7 @@ Currently pursuing my Bachelor's in Applied Computer Science while building proj
       demo_url: "",
       github_url: "https://github.com/lunararch/bliss",
       image_url: "/projects/bliss.png",
-      status: "ARCHIVED" as const,
+      status: "ARCHIVED",
       date_completed: "2025-07",
       your_role: "Full-Stack Developer",
       team_size: "Solo"
@@ -224,12 +224,12 @@ Currently pursuing my Bachelor's in Applied Computer Science while building proj
       demo_url: "",
       github_url: "https://github.com/lunararch/parselt",
       image_url: "/projects/parselt.png",
-      status: "COMPLETED" as const,
+      status: "COMPLETED",
       date_completed: "2025-07",
       your_role: "Full-Stack Developer",
       team_size: "Solo"
     }
-  ],
+  ] satisfies Project[],
 
   experience: [
     {
