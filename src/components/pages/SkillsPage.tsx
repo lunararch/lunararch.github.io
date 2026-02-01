@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { portfolioData, SkillLevel, SkillCategory } from "@/data/portfolio";
+import { portfolioData, SkillLevel, SkillCategory, Skill } from "@/data/portfolio";
 import { motion } from "framer-motion";
 
 function getLevelColor(level: SkillLevel): string {
@@ -34,7 +34,7 @@ function getLevelPercent(level: SkillLevel): number {
   }
 }
 
-function SkillBar({ skill }: { skill: (typeof portfolioData.skills)[0] }) {
+function SkillBar({ skill }: { skill: Skill }) {
   const [showTooltip, setShowTooltip] = useState(false);
 
   return (
@@ -94,7 +94,7 @@ function SkillBar({ skill }: { skill: (typeof portfolioData.skills)[0] }) {
 export function SkillsPage() {
   const [filter, setFilter] = useState<SkillCategory | "all">("all");
   const [levelFilter, setLevelFilter] = useState<SkillLevel | "all">("all");
-  const { skills } = portfolioData;
+  const skills: Skill[] = portfolioData.skills;
 
   const filteredSkills = useMemo(() => {
     return skills.filter((skill) => {
