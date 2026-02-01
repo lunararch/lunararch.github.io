@@ -1,75 +1,36 @@
-# Portfolio Website for GitHub
-
-This repository contains a modern portfolio website with a pastel color scheme, featuring interactive elements and a responsive design.
-
-## Features
-
-- Responsive design that works on all devices
-- Interactive Three.js background animation
-- Smooth scrolling and animations
-- Project filtering functionality
-- Skills visualization
-- Contact form
-- Pastel color scheme with magenta, light purple, light pink, and light blue
-
-## Technologies Used
-
-- HTML5
-- CSS3 (Custom CSS with CSS Variables)
-- JavaScript (ES6+)
-- Three.js for 3D background effects
-- GSAP for animations
-- ScrollReveal for scroll animations
-- Font Awesome for icons
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
-1. Clone this repository
-2. Open `index.html` in your browser
-3. Customize the content to make it your own
+First, run the development server:
 
-## Customization
-
-### Changing Colors
-
-The color palette is defined in `assets/css/variables.css`. You can modify the colors there to match your preferences.
-
-### Adding Projects
-
-To add your own projects, edit the `projects-grid` section in `index.html`. Each project follows this structure:
-
-```html
-<div class="project-card" data-category="category">
-    <div class="project-image">
-        <!-- Add your project image here -->
-    </div>
-    <div class="project-info">
-        <h3>Project Title</h3>
-        <p>Project description</p>
-        <div class="project-tags">
-            <span>Tag1</span>
-            <span>Tag2</span>
-        </div>
-        <div class="project-links">
-            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-            <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-        </div>
-    </div>
-</div>
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-### Updating Skills
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-To update your skills, modify the `skills-container` section in `index.html`. Adjust the skill levels by changing the width percentage in the style attribute.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## License
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-This project is open source and available under the [MIT License](LICENSE).
+## Learn More
 
-## Acknowledgments
+To learn more about Next.js, take a look at the following resources:
 
-- Font Awesome for icons
-- Google Fonts for typography
-- Three.js for 3D effects
-- GSAP for animations
-- ScrollReveal for scroll animations
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
